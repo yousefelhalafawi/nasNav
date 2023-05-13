@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+  
+    &__brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  
+     
+      
+    }
+  }
+  .navbar__button {
+    background-color: var(--secondary-color);
+    color: teal;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color:teal ;
+      color: white;
+
+    }
+  }
+  .navbar__button {
+    position: relative;
+  
+
+  
+    .badge {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: white;
+      background-color: red;
+      padding: 0.3rem 0.6rem;
+      border-radius: 50%;
+    }
+  }
+  
