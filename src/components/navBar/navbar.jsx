@@ -12,7 +12,7 @@ class Navbar extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/cart')
+    axios.get('http://localhost:3001/cart')
       .then(response => {
         this.setState({ cartItems: response.data });
       })

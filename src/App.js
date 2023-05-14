@@ -5,21 +5,27 @@ import Navbar from './components/navBar/navbar';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Error from './components/error.jsx';
+import AdidasUI from './pages/AdidasUI';
 
 function App() {
+ 
   return (
     <div className="App">
 
-    <BrowserRouter>
-    <Navbar/>
-    <Routes>
-    <Route path="/" element={<Home/>}></Route>
-    <Route path="/cart" element={<Cart/>}></Route>
-    <Route path="*" element={<Error/>}></Route>
+<BrowserRouter>
+ <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/product/:id"
+          element={<AdidasUI />}
+        />
+        <Route path="*" element={<Error />} />
+      </Routes>
 
-    </Routes>
+      
     </BrowserRouter>
-
     </div>
       
   );
